@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic,cyrillic-ext");
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, img, footer, header, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+*::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none; }
+
+*::--webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none; }
+
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none; }
+
+.v-container ::-moz-selection {
+  background: rgba(111, 16, 52, 0.6);
+  color: #fff; }
+
+.v-container ::selection {
+  background: rgba(111, 16, 52, 0.6);
+  color: #fff; }
+
+.v-container {
+  max-width: 1060px;
+  height: 100%;
+  margin: 0 auto;
+  color: #fff;
+  padding-top: 200px; }
+
+.v-wrapper {
+  background: url("../img/bg.png");
+  background-size: cover;
+  width: 100%; }
+
+.v-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.v-intro {
+  background: rgba(6, 8, 9, 0.5);
+  padding: 30px 0; }
+  .v-intro__title {
+    width: 500px;
+    margin: 0 auto;
+    font-size: 95px;
+    font-family: "agf";
+    text-transform: uppercase;
+    line-height: 1.035;
+    text-align: center; }
+  .v-intro__text {
+    background: url("../img/dec.png") no-repeat;
+    background-position: top;
+    background-size: 768px;
+    padding-top: 45px;
+    width: 768px;
+    margin: 15px auto; }
+    .v-intro__text p {
+      padding: 0 15px;
+      font-size: 19px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 2.105;
+      text-align: center; }
+  .v-intro__link {
+    width: 310px;
+    height: 100px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 42px;
+    font-family: "agf";
+    background: #6f1034; }
+
+.v-main {
+  margin-top: 60px;
+  background: rgba(6, 8, 9, 0.5); }
+
+.v-block {
+  font-family: "agf"; }
+  .v-block.-first p:last-child {
+    margin-top: 30px; }
+  .v-block.-second {
+    padding: 60px 0; }
+  .v-block__desc {
+    font-size: 23px;
+    line-height: 1.609;
+    padding: 30px 50px; }
+  .v-block__video {
+    height: 510px; }
+  .v-block__title {
+    font-size: 46px;
+    font-family: "agf";
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    background: url("../img/dec.png") no-repeat;
+    background-position: bottom;
+    background-size: 768px;
+    padding-bottom: 50px; }
+    .v-block__title-desc {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 19px;
+      font-family: "Open Sans", sans-serif;
+      padding: 20px 50px 40px;
+      line-height: 2;
+      font-weight: bold; }
+  .v-block__item {
+    width: 495px;
+    position: relative;
+    font-family: "agf"; }
+    .v-block__item-title {
+      font-size: 42px;
+      text-transform: uppercase;
+      line-height: 1.548;
+      padding: 0 50px; }
+    .v-block__item-text {
+      font-size: 22px;
+      line-height: 1.609;
+      padding: 10px 0px 20px 50px; }
+
+.v-label {
+  background: #6f1034;
+  padding: 0 50px; }
+  .v-label__title {
+    display: block;
+    position: relative;
+    padding: 10px 0;
+    font-size: 32px;
+    line-height: 1.156;
+    cursor: pointer; }
+    .v-label__title::after {
+      content: url("../img/arrow.png");
+      height: 35px;
+      position: absolute;
+      right: -30px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+  .v-label__text {
+    padding-bottom: 30px;
+    font-size: 23px;
+    line-height: 1.609;
+    font-family: "bodoni"; }
+
+.v-label__text {
+  display: none; }
+
+.v-label-open .v-label__text {
+  display: block; }
+.v-label-open .v-label__title::after {
+  content: url("../img/arrow-down.png"); }

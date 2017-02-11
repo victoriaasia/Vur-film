@@ -1,0 +1,187 @@
+$violet: #6f1034
+$white: #fff
+$black: #060809
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic,cyrillic-ext')
+
+// reset
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, img, footer, header, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+// common styles
+
+img
+  max-width: 100%
+  height: auto
+
+a
+  text-decoration: none
+  color: inherit
+
+*::-webkit-media-controls-panel
+  display: none !important
+  -webkit-appearance: none
+
+*::--webkit-media-controls-play-button
+  display: none !important
+  -webkit-appearance: none
+
+*::-webkit-media-controls-start-playback-button
+  display: none !important
+  -webkit-appearance: none
+
+.v-container ::-moz-selection
+  background: rgba($violet, 0.6)
+  color: $white
+.v-container ::selection
+  background: rgba($violet, 0.6)
+  color: $white
+
+.v-container
+  max-width: 1060px
+  height: 100%
+  margin: 0 auto
+  color: $white
+  // del
+  padding-top: 200px
+
+// del
+.v-wrapper
+  background: url('../img/bg.png')
+  background-size: cover
+  width: 100%
+
+.v-flex
+  display: flex
+
+.v-intro
+  background: rgba($black, 0.5)
+  padding: 30px 0
+  &__title
+    width: 500px
+    margin: 0 auto
+    font-size: 95px
+    font-family: "agf"
+    text-transform: uppercase
+    line-height: 1.035
+    text-align: center
+  &__text
+    background: url('../img/dec.png') no-repeat
+    background-position: top
+    background-size: 768px
+    padding-top: 45px
+    width: 768px
+    margin: 15px auto
+    p
+      padding: 0 15px
+      font-size: 19px
+      font-family: 'Open Sans', sans-serif
+      font-weight: bold
+      text-transform: uppercase
+      line-height: 2.105
+      text-align: center
+  &__link
+    width: 310px
+    height: 100px
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 42px
+    font-family: "agf"
+    background: $violet
+
+
+.v-main
+  margin-top: 60px
+  background: rgba($black, 0.5)
+
+.v-block
+  font-family: "agf"
+  &.-first
+    p:last-child
+      margin-top: 30px
+  &.-second
+    padding: 60px 0
+  &__desc
+    font-size: 23px
+    line-height: 1.609
+    padding: 30px 50px
+  &__video
+    height: 510px
+  &__title
+    font-size: 46px
+    font-family: "agf"
+    text-transform: uppercase
+    line-height: 1
+    text-align: center
+    background: url('../img/dec.png') no-repeat
+    background-position: bottom
+    background-size: 768px
+    padding-bottom: 50px
+    &-desc
+      text-transform: uppercase
+      text-align: center
+      font-size: 19px
+      font-family: "Open Sans", sans-serif
+      padding: 20px 50px 40px
+      line-height: 2
+      font-weight: bold
+  &__item
+    width: 495px
+    position: relative
+    font-family: "agf"
+    &-title
+      font-size: 42px
+      text-transform: uppercase
+      line-height: 1.548
+      padding: 0 50px
+    &-text
+      font-size: 22px
+      line-height: 1.609
+      padding: 10px 0px 20px 50px
+
+
+.v-label
+  background: $violet
+  padding: 0 50px
+  &__title
+    display: block
+    position: relative
+    padding: 10px 0
+    font-size: 32px
+    line-height: 1.156
+    cursor: pointer
+    &::after
+      content: url('../img/arrow.png')
+      height: 35px
+      position: absolute
+      right: -30px
+      top: 50%
+      transform: translateY(-50%)
+  &__text
+    padding-bottom: 30px
+    font-size: 23px
+    line-height: 1.609
+    font-family: "bodoni"
+
+.v-label__text
+  display: none
+
+.v-label-open
+  .v-label__text
+    display: block
+  .v-label__title::after
+    content: url('../img/arrow-down.png')
+
+
+
+
+
+
+// @import "media"

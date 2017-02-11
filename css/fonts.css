@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "agf";
+	src: url('fonts/agf/agf.eot');
+	src: url('fonts/agf/agf.woff') format('woff'), url('fonts/agf/agf.ttf') format('truetype'), url('fonts/agf/agf.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'bodoni';
+	src: url('fonts/bodoni/bodoni72osc.eot');
+	src: url('fonts/bodoni/bodoni72osc.woff') format('woff'), url('fonts/bodoni/bodoni72osc.ttf') format('truetype'), url('fonts/bodoni/bodoni72osc.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
