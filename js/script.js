@@ -47,24 +47,44 @@
 
 // label open-close
 
-class Label {
-	constructor({elem}) {
-		this.elem = elem;
-		this.titleElem = elem.querySelector('.v-label__title');
-
-		// this = menu
-		this.titleElem.onclick = this.onTitleClick.bind(this);
-	}
-
-	onTitleClick(event) {
-		this.toggle();
-	}
-
-	toggle() {
-		this.elem.classList.toggle('v-label-open');
-	}
+let hiddenLabels = document.querySelectorAll('.v-label__text');
+for(let i=0;  i < hiddenLabels.length; i++) {
+	hiddenLabels[i].style.display = 'none';
 }
 
-let menu = new Label({
-	elem: jsLabel
-});
+class Label{
+constructor(element){
+	this.element = element;
+	this.element.addEventListener('click', this.onClick.bind(this));
+}
+
+onClick(event){
+	let target = event.target;
+	if (event.target.nodeName != 'SPAN') return;
+	if(event.target.parentElement.children[1]) {
+	  this.toggle(event.target.parentElement);
+		event.target.parentElement.classList.toggle('v-label__open');
+	}
+
+	let selectEvent = new CustomEvent("tree-select", {
+	  bubbles: true,
+	  detail: {
+	    value: event.target.innerHTML
+	  }
+	});
+	this.element.dispatchEvent(selectEvent);
+}
+
+toggle(p) {
+	if(p.children[1].style.display == ''){
+		p.children[1].style.display = 'none';
+	} else {
+		p.children[1].style.display = '';
+	}
+}
+}
+
+let elem = document.querySelector('.-second');
+let treeListMenu = new Label(elem);
+
+elem.addEventListener('tree-select', event => console.log(event.detail.value));

@@ -76,7 +76,7 @@ a
     background-size: 768px
     padding-top: 45px
     width: 768px
-    margin: 15px auto
+    margin: 15px auto 30px
     p
       padding: 0 15px
       font-size: 19px
@@ -98,7 +98,7 @@ a
 
 
 .v-main
-  margin-top: 60px
+  margin-top: 40px
   background: rgba($black, 0.5)
 
 .v-block
@@ -113,7 +113,7 @@ a
     line-height: 1.609
     padding: 30px 50px
   &__video
-    height: 510px
+    height: 500px
   &__title
     font-size: 46px
     font-family: "agf"
@@ -129,31 +129,56 @@ a
       text-align: center
       font-size: 19px
       font-family: "Open Sans", sans-serif
-      padding: 20px 50px 40px
+      padding: 15px 50px 40px
       line-height: 2
       font-weight: bold
   &__item
-    width: 495px
+    width: 100%
+    height: 620px
     position: relative
     font-family: "agf"
+    &__wrapper
+      width: 495px
+    &:nth-child(even)
+      text-align: right
+      .v-block__item-title
+        padding-right: 50px
+      .v-block__item-text
+        padding: 10px 50px 20px 0px
+      .v-label__title::after
+        left: 20px
+        transform: scale(-1, 1)
+        top: 25%
+      .v-block__item__wrapper
+        float: right
+    &:nth-child(odd)
+      .v-block__item-title
+        padding-left: 50px
+      .v-block__item-text
+        padding: 10px 0px 20px 50px
+      .v-label__title::after
+        right: 20px
+        top: 50%
+    &-img
+      position: absolute
     &-title
       font-size: 42px
       text-transform: uppercase
       line-height: 1.548
-      padding: 0 50px
     &-text
       font-size: 22px
       line-height: 1.609
-      padding: 10px 0px 20px 50px
 
 
 .v-label
   background: $violet
-  padding: 0 50px
+  max-height: 345px
+  overflow: hidden
+  position: relative
   &__title
     display: block
     position: relative
-    padding: 10px 0
+    padding: 10px 50px
     font-size: 32px
     line-height: 1.156
     cursor: pointer
@@ -161,26 +186,36 @@ a
       content: url('../img/arrow.png')
       height: 35px
       position: absolute
-      right: -30px
-      top: 50%
       transform: translateY(-50%)
   &__text
-    padding-bottom: 30px
+    padding: 0 50px 30px
     font-size: 23px
     line-height: 1.609
     font-family: "bodoni"
 
-.v-label__text
-  display: none
-
-.v-label-open
-  .v-label__text
-    display: block
+.v-label__open
   .v-label__title::after
-    content: url('../img/arrow-down.png')
+    content: url('../img/arrow-down.png') !important
 
+.v-img-first
+  right: -190px
+  top: -55px
+  width: 765px
 
+.v-img-second
+  left: -245px
+  top: -65px
+  width: 840px
 
+.v-img-third
+  right: -145px
+  top: -115px
+  width: 666px
+
+.v-img-fourth
+  left: -350px
+  top: -85px
+  width: 910px
 
 
 
