@@ -1,6 +1,7 @@
 $violet: #6f1034
 $white: #fff
 $black: #060809
+$gray: #8d8689
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic,cyrillic-ext')
 
@@ -14,6 +15,8 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, img, footer
   vertical-align: baseline
 
 // common styles
+body
+  overflow-x: hidden
 
 img
   max-width: 100%
@@ -35,26 +38,25 @@ a
   display: none !important
   -webkit-appearance: none
 
-.v-container ::-moz-selection
+.v-wrapper ::-moz-selection
   background: rgba($violet, 0.6)
   color: $white
-.v-container ::selection
+.v-wrapper ::selection
   background: rgba($violet, 0.6)
   color: $white
 
-.v-container
-  max-width: 1060px
-  height: 100%
-  margin: 0 auto
-  color: $white
-  // del
-  padding-top: 200px
-
-// del
 .v-wrapper
   background: url('../img/bg.png')
   background-size: cover
   width: 100%
+  color: $white
+  overflow: hidden
+
+.v-clearfix:after
+  content: ""
+  display: table
+  clear: both
+
 
 .v-flex
   display: flex
@@ -62,6 +64,8 @@ a
 .v-intro
   background: rgba($black, 0.5)
   padding: 30px 0
+  margin: 200px auto 0
+  max-width: 1060px
   &__title
     width: 500px
     margin: 0 auto
@@ -96,18 +100,20 @@ a
     font-family: "agf"
     background: $violet
 
-
-.v-main
-  margin-top: 40px
-  background: rgba($black, 0.5)
-
 .v-block
   font-family: "agf"
+  margin: 0 auto
+  max-width: 1060px
+  background: rgba($black, 0.5)
   &.-first
+    margin-top: 40px
     p:last-child
       margin-top: 30px
   &.-second
     padding: 60px 0
+  &.-third
+    .v-block__title-desc
+      padding: 15px 50px 20px
   &__desc
     font-size: 23px
     line-height: 1.609
@@ -134,7 +140,7 @@ a
       font-weight: bold
   &__item
     width: 100%
-    height: 620px
+    height: 610px
     position: relative
     font-family: "agf"
     &__wrapper
@@ -168,6 +174,33 @@ a
     &-text
       font-size: 22px
       line-height: 1.609
+    &-vamp
+      position: relative
+      &:nth-child(odd)
+        .v-block__item-vamp__wrapper
+          float: right
+      &__wrapper
+        width: 500px
+        margin: 30px 50px
+      .v-block__item-text
+        p:last-child
+          margin-top: 30px
+  &__test
+    font-family: "agf"
+    text-align: center
+    > span
+      font-size: 30px
+    &-link
+      width: 530px
+      height: 100px
+      margin: 0 auto 15px
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 42px
+      background: $white
+      color: $violet
+
 
 
 .v-label
@@ -216,6 +249,120 @@ a
   left: -350px
   top: -85px
   width: 910px
+
+.v-img-fifth
+  right: -50px
+  top: 20px
+  width: 666px
+
+.v-img-sixth
+  left: -230px
+  top: 0px
+  width: 840px
+
+
+.v-icons
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100px
+  position: relative
+  //del
+  margin-top: 145px
+  &::before
+    content: ''
+    position: absolute
+    border-top: 2px solid $white
+    width: 100%
+    top: 50%
+    transform: rotateX(-50%)
+    left: 0
+  &__item
+    position: relative
+    display: flex
+    width: 80px
+    height: 80px
+    border: 2px solid $white
+    border-radius: 50%
+    margin: 0 15px
+    background: $violet
+
+.v-block-slider
+  background: rgba($violet, 0.5)
+
+.v-facts
+  max-width: 1060px
+  margin: auto
+  position: relative
+  font-family: "agf"
+  &__desc-back
+    position: absolute
+    width: 460px
+    height: 100%
+    top: 0
+    left: 0
+    background: rgba($violet, 0.5)
+    padding: 35px 10px 0 55px
+    box-sizing: border-box
+  &__desc
+    color: $white
+    position: absolute
+    top: 0
+    left: 0
+    width: 460px
+    height: 400px
+    padding: 25px 15px
+    box-sizing: border-box
+    overflow: hidden
+  &__title
+    font-size: 40px
+    text-transform: uppercase
+    line-height: 1.548
+  &__text
+    font-size: 23px
+    line-height: 1.609
+    margin-top: 190px
+    padding: 0 10px 0 40px
+  &__item
+    height: 480px
+    overflow: hidden
+  &__dots
+    position: absolute
+    bottom: 10px
+    width: 100%
+    text-align: center
+
+
+
+.v-dot
+  cursor: pointer
+  height: 13px
+  width: 13px
+  margin: 0 2px
+  background-color: $gray
+  border-radius: 50%
+  display: inline-block
+  transition: background-color 0.6s ease
+
+
+.v-dot-active, .v-dot:hover
+  background-color: $white
+
+.fade
+  -webkit-animation-name: fade
+  -webkit-animation-duration: 1.5s
+  animation-name: fade
+  animation-duration: 1.5s
+
+
+// @-webkit-keyframes fade
+//   from opacity: .4
+//   to opacity: 1
+
+
+// @keyframes fade
+//   from opacity: .4
+//   to opacity: 1
 
 
 
