@@ -55,7 +55,7 @@ a {
   background: rgba(6, 8, 9, 0.5);
   padding: 30px 0;
   margin: 200px auto 0;
-  max-width: 1060px; }
+  width: 1100px; }
   .v-intro__title {
     width: 500px;
     margin: 0 auto;
@@ -67,9 +67,9 @@ a {
   .v-intro__text {
     background: url("../img/dec.png") no-repeat;
     background-position: top;
-    background-size: 768px;
-    padding-top: 45px;
-    width: 768px;
+    background-size: 800px;
+    padding-top: 55px;
+    width: 800px;
     margin: 15px auto 30px; }
     .v-intro__text p {
       padding: 0 15px;
@@ -105,10 +105,10 @@ a {
 .v-block {
   font-family: "agf";
   margin: 0 auto;
-  max-width: 1060px;
+  width: 1100px;
   background: rgba(6, 8, 9, 0.5); }
   .v-block.-first {
-    margin-top: 40px; }
+    margin-top: 50px; }
     .v-block.-first p:last-child {
       margin-top: 30px; }
   .v-block.-second {
@@ -157,7 +157,40 @@ a {
     line-height: 1.609;
     padding: 30px 50px; }
   .v-block__video {
-    height: 500px; }
+    height: 540px;
+    position: relative; }
+    .v-block__video-poster {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 20;
+      cursor: pointer; }
+    .v-block__video-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0; }
+    .v-block__video-desc {
+      background: rgba(111, 16, 52, 0.5);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 40;
+      width: 470px;
+      height: 100%;
+      padding: 40px 45px;
+      box-sizing: border-box;
+      font-size: 23px;
+      font-family: "agf";
+      line-height: 1.609;
+      overflow: hidden; }
+    .v-block__video__player .v-block__video-poster, .v-block__video__player .v-block__video-desc {
+      display: none; }
   .v-block__title {
     font-size: 46px;
     font-family: "agf";
@@ -174,7 +207,9 @@ a {
       font-size: 19px;
       font-family: "Open Sans Bold", sans-serif;
       padding: 15px 50px 40px;
-      line-height: 2; }
+      line-height: 2;
+      position: relative;
+      z-index: 999; }
   .v-block__item {
     width: 100%;
     height: 610px;
@@ -366,7 +401,7 @@ a {
     background: #6f1034; }
 
 .v-facts {
-  max-width: 1060px;
+  width: 1100px;
   margin: auto;
   position: relative;
   font-family: "agf"; }
@@ -420,7 +455,7 @@ a {
       background-color: #fff; }
 
 .v-slider {
-  max-width: 1060px;
+  width: 1100px;
   margin: 10px auto 0;
   position: relative;
   font-family: "agf"; }
@@ -491,7 +526,7 @@ a {
   to {
     opacity: 1; } }
 .v-footer {
-  max-width: 1060px;
+  width: 1100px;
   margin: 275px auto 0; }
   .v-footer__link {
     width: 420px;

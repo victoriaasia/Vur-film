@@ -140,3 +140,15 @@ for (i = 0; i < dots.length; i++) {
 slides[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += " v-slider__dot-active";
 }
+
+// video
+
+$('.js-btn').click(function(){
+	$('.v-block__video').addClass('v-video__play');
+		autoPlayVideo('qmnncXX-d9E','100%','100%');
+});
+
+function autoPlayVideo(vcode, width, height){
+  "use strict";
+  $(".v-block__video").html('<iframe width="'+width+'" height="'+height+'" src="https://www.youtube.com/embed/'+vcode+'?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>');
+};
