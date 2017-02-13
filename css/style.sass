@@ -110,10 +110,14 @@ a
     p:last-child
       margin-top: 30px
   &.-second
-    padding: 60px 0
+    padding: 60px 0 0
   &.-third
     .v-block__title-desc
-      padding: 15px 50px 20px
+      padding: 60px 50px 20px
+  &.-fourth
+    background: rgba($violet, 0.5)
+  &.-fifth
+    margin-top: 60px
   &__desc
     font-size: 23px
     line-height: 1.609
@@ -174,17 +178,20 @@ a
     &-text
       font-size: 22px
       line-height: 1.609
+      margin-top: 15px
     &-vamp
       position: relative
       &:nth-child(odd)
         .v-block__item-vamp__wrapper
           float: right
+          padding-left: 20px
+          box-sizing: border-box
       &__wrapper
         width: 500px
-        margin: 30px 50px
+        margin: 25px 50px
       .v-block__item-text
         p:last-child
-          margin-top: 30px
+          margin-top: 35px
   &__test
     font-family: "agf"
     text-align: center
@@ -201,13 +208,12 @@ a
       background: $white
       color: $violet
 
-
-
 .v-label
   background: $violet
   max-height: 345px
   overflow: hidden
   position: relative
+  z-index: 999
   &__title
     display: block
     position: relative
@@ -229,6 +235,23 @@ a
 .v-label__open
   .v-label__title::after
     content: url('../img/arrow-down.png') !important
+
+.v-vamp-label
+  background: $violet
+  max-height: 345px
+  padding: 20px 80px
+  position: relative
+  text-align: center
+  height: 230px
+  box-sizing: border-box
+  &__title
+    font-size: 32px
+    line-height: 1.156
+  &__text
+    font-size: 23px
+    line-height: 1.609
+    padding: 10px 0
+
 
 .v-img-first
   right: -190px
@@ -258,17 +281,17 @@ a
 .v-img-sixth
   left: -230px
   top: 0px
-  width: 840px
+  width: 865px
 
 
 .v-icons
   display: flex
   align-items: center
   justify-content: center
-  height: 100px
+  height: 10px
   position: relative
-  //del
-  margin-top: 145px
+  top: -5px
+  left: 0
   &::before
     content: ''
     position: absolute
@@ -286,9 +309,6 @@ a
     border-radius: 50%
     margin: 0 15px
     background: $violet
-
-.v-block-slider
-  background: rgba($violet, 0.5)
 
 .v-facts
   max-width: 1060px
@@ -324,45 +344,92 @@ a
     margin-top: 190px
     padding: 0 10px 0 40px
   &__item
-    height: 480px
+    height: 520px
     overflow: hidden
   &__dots
     position: absolute
-    bottom: 10px
+    bottom: 20px
     width: 100%
     text-align: center
+  &__dot
+    cursor: pointer
+    height: 15px
+    width: 15px
+    margin: 0 3px
+    background-color: $gray
+    border-radius: 50%
+    display: inline-block
+    transition: background-color 0.6s ease
+    &-active, &:hover
+      background-color: $white
 
+.v-slider
+  max-width: 1060px
+  margin: 10px auto 0
+  position: relative
+  font-family: "agf"
+  &__desc
+    color: $white
+    position: absolute
+    bottom: 70px
+    left: 0
+    width: 100%
+    height: 110px
+    box-sizing: border-box
+    overflow: hidden
+  &__text
+    font-size: 23px
+    line-height: 1.609
+    padding: 0 150px
+  &__item
+    height: 605px
+    overflow: hidden
+    text-align: center
+  &__dots
+    position: absolute
+    bottom: 35px
+    width: 100%
+    text-align: center
+  &__dot
+    cursor: pointer
+    height: 15px
+    width: 15px
+    margin: 0 3px
+    background-color: $gray
+    border-radius: 50%
+    display: inline-block
+    transition: background-color 0.6s ease
+    &-active, &:hover
+      background-color: $white
+  &__prev,
+  &__next
+    cursor: pointer
+    position: absolute
+    bottom: 125px
+    width: 45px
+    height: 45px
+  &__next
+    right: 60px
+    background: url('../img/arrow-right.png') no-repeat
+    background-size: contain
+  &__prev
+    left: 90px
+    background: url('../img/arrow-left.png') no-repeat
+    background-size: contain
 
-
-.v-dot
-  cursor: pointer
-  height: 13px
-  width: 13px
-  margin: 0 2px
-  background-color: $gray
-  border-radius: 50%
-  display: inline-block
-  transition: background-color 0.6s ease
-
-
-.v-dot-active, .v-dot:hover
-  background-color: $white
-
-.fade
-  -webkit-animation-name: fade
-  -webkit-animation-duration: 1.5s
+.v-fade
   animation-name: fade
   animation-duration: 1.5s
 
+@keyframes fade
+  from
+    opacity: .4
+  to
+    opacity: 1
 
-// @-webkit-keyframes fade
-//   from opacity: .4
-//   to opacity: 1
 
 
-// @keyframes fade
-//   from opacity: .4
-//   to opacity: 1
+
 
 
 

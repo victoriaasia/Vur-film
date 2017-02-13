@@ -88,3 +88,55 @@ let elem = document.querySelector('.-second');
 let treeListMenu = new Label(elem);
 
 elem.addEventListener('tree-select', event => console.log(event.detail.value));
+
+
+// slider1 and slider2
+
+let slideIndex = 1;
+let factIndex = 1;
+showSlides(slideIndex);
+showFacts(factIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function currentFact(n) {
+showFacts(factIndex = n);
+}
+
+function showFacts(n) {
+let i;
+let facts = document.getElementsByClassName("v-facts__item");
+let dots = document.getElementsByClassName("v-facts__dot");
+if (n > facts.length) {factIndex = 1}
+if (n < 1) {factIndex = facts.length}
+for (i = 0; i < facts.length; i++) {
+		facts[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" v-facts__dot-active", "");
+}
+facts[factIndex-1].style.display = "block";
+dots[factIndex-1].className += " v-facts__dot-active";
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("v-slider__item");
+let dots = document.getElementsByClassName("v-slider__dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" v-slider__dot-active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " v-slider__dot-active";
+}
