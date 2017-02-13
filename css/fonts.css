@@ -13,3 +13,19 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/osr/OpenSansRegular.eot");
+  src: url("fonts/osr/OpenSansRegular.eot?#iefix")format("embedded-opentype"),url("fonts/osr/OpenSansRegular.woff") format("woff"), url("fonts/osr/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("fonts/osb/OpenSansBold.eot");
+  src: url("fonts/osb/OpenSansBold.eot?#iefix")format("embedded-opentype"), url("fonts/osb/OpenSansBold.woff") format("woff"), url("fonts/osb/OpenSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
