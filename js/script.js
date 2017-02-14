@@ -52,6 +52,11 @@ for(let i=0;  i < hiddenLabels.length; i++) {
 	hiddenLabels[i].style.display = 'none';
 }
 
+// let hiddenIcons = document.querySelectorAll('.v-img-icons');
+// for(let i=0;  i < hiddenIcons.length; i++) {
+// 	hiddenIcons[i].style.display = 'none';
+// }
+
 class Label{
 constructor(element){
 	this.element = element;
@@ -61,9 +66,11 @@ constructor(element){
 onClick(event){
 	let target = event.target;
 	if (event.target.nodeName != 'SPAN') return;
+
 	if(event.target.parentElement.children[1]) {
 	  this.toggle(event.target.parentElement);
 		event.target.parentElement.classList.toggle('v-label__open');
+		jsjsjs.classList.toggle('v-hidden');
 	}
 
 	let selectEvent = new CustomEvent("tree-select", {
@@ -84,7 +91,7 @@ toggle(p) {
 }
 }
 
-let elem = document.querySelector('.-second');
+let elem = document.querySelector('.v-block-second-i');
 let treeListMenu = new Label(elem);
 
 elem.addEventListener('tree-select', event => console.log(event.detail.value));
