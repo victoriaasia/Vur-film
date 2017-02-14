@@ -70,7 +70,6 @@ onClick(event){
 	if(event.target.parentElement.children[1]) {
 	  this.toggle(event.target.parentElement);
 		event.target.parentElement.classList.toggle('v-label__open');
-		jsjsjs.classList.toggle('v-hidden');
 	}
 
 	let selectEvent = new CustomEvent("tree-select", {
@@ -151,11 +150,62 @@ dots[slideIndex-1].className += " v-slider__dot-active";
 // video
 
 $('.js-btn').click(function(){
-	$('.v-block__video').addClass('v-video__play');
+
+	$('.v-block__video-desc').addClass('wow slideOutLeft animated');
+
+	setTimeout(function(){
+		$('.v-block__video').addClass('v-video__play');
 		autoPlayVideo('qmnncXX-d9E','100%','100%');
+	}, 1500);
+
+
+
 });
 
 function autoPlayVideo(vcode, width, height){
   "use strict";
   $(".v-block__video").html('<iframe width="'+width+'" height="'+height+'" src="https://www.youtube.com/embed/'+vcode+'?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>');
 };
+
+//
+
+var target = $('.v-decor').find('.v-decor-line');
+var target2 = $('.v-decor2').find('.v-decor-line');
+var target3 = $('.v-decor3').find('.v-decor-line');
+var target4 = $('.v-decor4').find('.v-decor-line');
+var target5 = $('.v-decor5').find('.v-decor-line');
+
+var targetPos = target.offset().top - 500;
+var targetPos2 = target2.offset().top - 200;
+var targetPos3 = target3.offset().top - 400;
+var targetPos4 = target4.offset().top - 900;
+var targetPos5 = target5.offset().top;
+
+
+var winHeight = $(window).height();
+
+var scrollToElem = targetPos - winHeight;
+var scrollToElem2 = targetPos2 - winHeight;
+var scrollToElem3 = targetPos3 - winHeight;
+var scrollToElem4 = targetPos4 - winHeight;
+var scrollToElem5 = targetPos5 - winHeight;
+
+$(window).scroll(function(){
+  var winScrollTop = $(this).scrollTop();
+
+  if(winScrollTop > scrollToElem){
+		target.addClass(' -active');
+  }
+	if (winScrollTop > scrollToElem2) {
+	    target2.addClass(' -active');
+	}
+	if (winScrollTop > scrollToElem3) {
+		    target3.addClass(' -active');
+		}
+	if (winScrollTop > scrollToElem4) {
+		    target4.addClass(' -active');
+		}
+	if (winScrollTop > scrollToElem5) {
+		    target5.addClass(' -active');
+		}
+});
