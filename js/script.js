@@ -154,7 +154,7 @@ $('.js-btn').click(function(){
 	$('.v-block__video-desc').addClass('wow slideOutLeft animated');
 
 	setTimeout(function(){
-		$('.v-block__video').addClass('v-video__play');
+		$('.js-btn').addClass('wow fadeOut animated');
 		autoPlayVideo('qmnncXX-d9E','100%','100%');
 	}, 1500);
 
@@ -178,7 +178,7 @@ var target5 = $('.v-decor5').find('.v-decor-line');
 var targetPos = target.offset().top - 500;
 var targetPos2 = target2.offset().top - 200;
 var targetPos3 = target3.offset().top - 400;
-var targetPos4 = target4.offset().top - 900;
+var targetPos4 = target4.offset().top - 500;
 var targetPos5 = target5.offset().top;
 
 
@@ -208,4 +208,12 @@ $(window).scroll(function(){
 	if (winScrollTop > scrollToElem5) {
 		    target5.addClass(' -active');
 		}
+});
+
+
+jQuery(document).ready(function ($) {
+if(window.matchMedia('(max-width: 769px)').matches) {
+	var removeThis = $('.v-block__item');
+	removeThis.removeClass('v-float-right');
+}
 });

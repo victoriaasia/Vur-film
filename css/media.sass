@@ -1,0 +1,78 @@
+@media only screen and (max-width: 769px)
+  .v-intro, .v-block, .v-block-second-v, .v-block__item-wrapper, .v-facts, .v-slider, .v-footer
+    width: 100%
+  .v-wrapper
+    background: url('../img/bg-min.png') no-repeat
+    background-size: 100%
+  .v-intro
+    margin-top: 0
+    padding: 55px 0
+    &__title
+      font-size: 52px
+    &__text
+      width: 100%
+      p
+        padding: 0 3px
+    &__link
+      margin: 195px auto 0
+
+  .v-decor, .v-decor2, .v-decor3, .v-decor4, .v-decor5
+    // margin: 30px 0
+    img
+      height: 60px
+    .v-decor-line
+      top: 43%
+
+  .v-block
+    &.-first
+      .v-block__desc
+        padding: 30px 3px
+        margin-top: 110px
+    &__video
+      height: 50vw
+      overflow: visible
+      margin-top: 350px
+      &-desc
+        top: -365px
+        width: 100%
+        height: 365px
+        padding: 15px 3px
+    &__title
+      font-size: 52px
+      &-desc
+        padding: 5px 3px 25px
+    &__item
+      height: 720px
+    &__item-title, &__item-text
+      background: rgba($black, 0.5)
+    &__item-text
+      margin: 0
+    &-second-i
+      .v-block__item-text,
+      .v-float-right .v-block__item-text
+        padding: 0px 3px 5px
+      .v-block__item-title
+        padding-left: 3px
+
+
+  .v-img-icons
+    width: 90%
+    &::before
+      width: 90%
+    &__item
+      width: 15vw
+      height: 15vw
+  #v-domovoy .v-img-icons, #v-demon .v-img-icons,#v-rusalka .v-img-icons, #v-oboroten .v-img-icons
+    top: 90%
+  #v-rusalka, #v-demon, #v-oboroten
+    margin: 30px 0
+  #v-domovoy, #v-demon
+  .v-img-icons
+    left: 0
+    top: 60%
+    justify-content: flex-end
+    &::before
+      left: 0
+
+  .v-label__title
+    padding: 10px 3px
