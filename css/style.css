@@ -948,6 +948,8 @@ a {
     font-size: 28px; }
   .v-footer__link {
     margin: 0 auto; }
+  .v-footer__social {
+    padding: 30px 3px 40px; }
   .v-footer__social-title {
     font-size: 40px; }
   .v-footer__social-icons {
