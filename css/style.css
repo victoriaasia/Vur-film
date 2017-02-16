@@ -1105,8 +1105,11 @@ a {
   .v-v-label__title {
     font-size: 12vw; }
 
-  .v-v-label__text, .v-footer__desc {
+  .v-footer__desc {
     font-size: 5vw; }
+
+  .v-v-label__text {
+    font-size: 7vw; }
 
   .v-facts__title {
     font-size: 12vw;
