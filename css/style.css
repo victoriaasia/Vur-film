@@ -981,7 +981,7 @@ a {
       height: 15vw; }
 
   #v-domovoy .v-img-icons, #v-demon .v-img-icons, #v-rusalka .v-img-icons, #v-oboroten .v-img-icons {
-    top: 85%; }
+    top: 90%; }
 
   #v-rusalka, #v-demon, #v-oboroten {
     margin: 30px 0; }
@@ -1098,6 +1098,9 @@ a {
   .v-intro__text p {
     font-size: 7vw; }
 
+  .v-label__title {
+    font-size: 10vw; }
+
   .v-label__text {
     font-size: 6vw; }
 
@@ -1128,14 +1131,18 @@ a {
   .v-block__item-text {
     font-size: 6vw; }
   .v-block-second-i .v-block__img {
-    width: 400px;
+    width: 450px;
     margin-left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-    min-width: 400px;
-    max-width: 400px;
+    min-width: 450px;
+    max-width: 450px;
     margin-top: -400px; }
 
   .v-footer__social-title {
-    font-size: 8vw; } }
+    font-size: 8vw; }
+
+  .v-block__test-link, .v-intro__link {
+    width: 80%;
+    font-size: 12vw; } }
