@@ -38,8 +38,9 @@ a {
   color: #fff; }
 
 .v-wrapper {
-  width: 100%;
-  color: #fff; }
+  width: 100vw;
+  color: #fff;
+  overflow: hidden; }
 
 .v-clearfix:after {
   content: "";
