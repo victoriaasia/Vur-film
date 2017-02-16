@@ -39,8 +39,7 @@ a {
 
 .v-wrapper {
   width: 100%;
-  color: #fff;
-  background: rgba(6, 8, 9, 0.2); }
+  color: #fff; }
 
 .v-clearfix:after {
   content: "";
@@ -823,9 +822,6 @@ a {
 @media only screen and (max-width: 769px) {
   .v-intro, .v-block, .v-block-second-v, .v-block__item-wrapper, .v-facts, .v-slider, .v-footer {
     width: 100%; }
-
-  .v-wrapper {
-    background: rgba(6, 8, 9, 0.2); }
 
   .v-img-first, .v-img-second, .v-img-fourth, .v-img-eighth, .v-img-nineth {
     display: none; }
