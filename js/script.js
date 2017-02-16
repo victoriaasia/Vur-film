@@ -94,7 +94,7 @@ for (i = 0; i < facts.length; i++) {
 for (i = 0; i < dots.length; i++) {
 		dots[i].className = dots[i].className.replace(" v-facts__dot-active", "");
 }
-facts[factIndex-1].style.display = "block";
+facts[factIndex-1].style.display = "flex";
 dots[factIndex-1].className += " v-facts__dot-active";
 }
 
@@ -112,8 +112,7 @@ for (i = 0; i < dots.length; i++) {
 }
 slides[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += " v-slider__dot-active";
-}
-
+};
 
 // window width 769px
 jQuery(document).ready(function ($) {
@@ -127,5 +126,6 @@ if(window.matchMedia('(max-width: 769px)').matches) {
 	label3.addEventListener("click", function(){
     icons3.classList.toggle('v-slide-left');
 	});
+
 }
 });
