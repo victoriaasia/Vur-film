@@ -973,7 +973,7 @@ a {
       font-size: 32px; }
 
   .v-img-icons {
-    width: 98%; }
+    width: 85%; }
     .v-img-icons::before {
       width: 90%; }
     .v-img-icons__item {
@@ -1127,22 +1127,26 @@ a {
   .v-block__title-desc {
     font-size: 7vw; }
   .v-block__item-title {
-    font-size: 15vw; }
+    font-size: 12vw; }
   .v-block__item-text {
     font-size: 6vw; }
   .v-block-second-i .v-block__img {
-    width: 450px;
+    height: 450px;
     margin-left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-    min-width: 450px;
-    max-width: 450px;
+    min-height: 450px;
+    max-height: 450px;
     margin-top: -400px; }
 
   .v-footer__social-title {
     font-size: 8vw; }
 
-  .v-block__test-link, .v-intro__link {
+  .v-block__test-link, .v-intro__link, .v-footer__link {
     width: 80%;
-    font-size: 12vw; } }
+    font-size: 12vw; }
+
+  .v-img-icons__item {
+    width: 18vw;
+    height: 18vw; } }
