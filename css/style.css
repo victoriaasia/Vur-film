@@ -1094,7 +1094,7 @@ a {
     background-position: -95px 5px; } }
 @media only screen and (min-width: 320px) and (max-width: 500px) {
   .v-intro__text p {
-    font-size: 7vw; }
+    font-size: 5vw; }
 
   .v-label__title {
     font-size: 10vw; }
@@ -1106,7 +1106,7 @@ a {
     font-size: 12vw; }
 
   .v-v-label__text, .v-footer__desc {
-    font-size: 7vw; }
+    font-size: 5vw; }
 
   .v-facts__title {
     font-size: 12vw;
@@ -1129,7 +1129,7 @@ a {
   .v-block__desc, .v-block__video-desc {
     font-size: 6vw; }
   .v-block__title-desc {
-    font-size: 7vw; }
+    font-size: 5vw; }
   .v-block__item-title {
     font-size: 12vw; }
   .v-block__item-text {
