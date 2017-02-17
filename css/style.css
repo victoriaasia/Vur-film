@@ -13,6 +13,7 @@
 .v-wrapper {
   width: 100%;
   color: #fff;
+  background: #060809;
   overflow-x: hidden; }
 
 .v-clearfix:after {
@@ -410,8 +411,8 @@
 
 .v-img-second {
   left: 0px;
-  top: 12px;
-  width: 488px; }
+  top: -81px;
+  width: 520px; }
 
 .v-img-third {
   right: 0px;
@@ -420,7 +421,7 @@
 
 .v-img-fourth {
   left: 0px;
-  top: -110px;
+  top: -179px;
   width: 460px; }
 
 .v-img-fifth {
@@ -430,7 +431,7 @@
 
 .v-img-sixth {
   left: 0px;
-  top: -97px;
+  top: -142px;
   width: 610px; }
 
 .v-img-seventh {
