@@ -648,10 +648,9 @@
   .v-facts__prev, .v-facts__next {
     cursor: pointer;
     position: absolute;
-    bottom: 125px;
+    bottom: 50%;
     width: 45px;
-    height: 45px;
-    display: none; }
+    height: 45px; }
   .v-facts__next {
     right: 10px;
     background: url("../img/arrow-right.png") no-repeat;
@@ -1092,7 +1091,6 @@
         background: transparent;
         overflow: visible; }
     .v-facts__prev, .v-facts__next {
-      display: block;
       width: 25px;
       bottom: 20%; }
     .v-facts__dot {
