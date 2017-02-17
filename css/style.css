@@ -978,7 +978,7 @@
       padding-bottom: 150px; }
     .v-block.-seventh .v-hidden:last-child {
       margin-top: 40px;
-      width: 430px;
+      width: 300px;
       position: absolute;
       right: 0; }
   .v-block.-eighth {
@@ -1172,7 +1172,7 @@
     .v-facts__desc-back {
       height: 170px; }
   .v-facts__dots {
-    top: 275px; }
+    top: 310px; }
 
   .v-block.-sixth {
     font-size: 7vw; }
