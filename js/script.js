@@ -27,7 +27,7 @@ var done = false;
 var firstScriptTag = document.getElementsByTagName('script')[0];
 
 function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player', {
+  player = new YT.Player('v-player', {
     height: '100%',
     width: '100%',
     videoId: 'qmnncXX-d9E',
