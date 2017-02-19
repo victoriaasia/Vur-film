@@ -47,17 +47,6 @@ function stopVideo() {
   player.stopVideo();
 }
 
-$('.js-video-btn').click(function(){
-	$('.v-block__video-desc').addClass('wow slideOutLeft animated');
-	setTimeout(function(){
-		$('.js-video-btn').addClass('wow fadeOut animated');
-
-    tag.src = "https://www.youtube.com/iframe_api";
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-	}, 1000);
-});
-
 
 // label open-close
 let label = document.querySelector('#v-domovoy .v-label__title');
@@ -152,7 +141,30 @@ if(window.matchMedia('(max-width: 769px)').matches) {
     icons3.classList.toggle('v-slide-left');
 	});
 
+  $('.js-video-btn').click(function(){
+  	setTimeout(function(){
+  		$('.js-video-btn').addClass('wow fadeOut animated');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  	}, 1000);
+  });
+
+} else if(window.matchMedia('(min-width: 769px)').matches) {
+
+  $('.js-video-btn').click(function(){
+  	$('.v-block__video-desc').addClass('wow slideOutLeft animated');
+  	setTimeout(function(){
+  		$('.js-video-btn').addClass('wow fadeOut animated');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  	}, 1000);
+  });
 }
+
 });
 
 
