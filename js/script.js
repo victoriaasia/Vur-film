@@ -130,10 +130,11 @@ if(window.matchMedia('(max-width: 769px)').matches) {
 }
 });
 
+
+// test
 var btn = document.querySelector('.js-test-btn');
 var block1 = document.querySelector('.-eighth');
 var block2 = document.querySelector('.v-test');
-
 btn.onclick = function(event) {
   event = event || window.event;
   if (event.preventDefault) {
@@ -142,7 +143,6 @@ btn.onclick = function(event) {
     event.returnValue = false;
   }
 }
-
 btn.addEventListener("click", function(){
     setTimeout(function(){
       block1.classList.add('v-hidden');
@@ -150,22 +150,11 @@ btn.addEventListener("click", function(){
     }, 500);
 });
 
-
-$(document).ready(function() {
-
 $('#v-question-one .js-answer-btn').click(function() { setTimeout(function() {
   $("#v-question-one").hide();
   $("#page-1").hide();
   $("#v-question-two").css('display', 'block');
   $("#page-2").css('display', 'block');
-  //
-  // $('.v-test__form').submit();
-  //
-  // $('.v-footer').hide();
-  // $('.v-decor-test').hide();
-  // $(".v-test").addClass('v-test-result');
-  // $(".v-test-result__content").css('display', 'block');
-
 }, 1000); });
 
 $('#v-question-two .js-answer-btn').click(function() { setTimeout(function() {
@@ -229,5 +218,3 @@ $('#v-question-nine .js-answer-btn').click(function() { setTimeout(function() {
   $(".v-test-result__content").css('display', 'block');
 
 }, 1000); });
-
-});
