@@ -21,18 +21,43 @@ function revealOnScroll() {
 };
 
 // video
+var tag = document.createElement('script');
+var player;
+var done = false;
+var firstScriptTag = document.getElementsByTagName('script')[0];
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '100%',
+    width: '100%',
+    videoId: 'qmnncXX-d9E',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+function onPlayerReady(event) {
+  event.target.playVideo();
+  event.target.setVolume(20);
+}
+function onPlayerStateChange(event) {
+}
+function stopVideo() {
+  player.stopVideo();
+}
+
 $('.js-video-btn').click(function(){
 	$('.v-block__video-desc').addClass('wow slideOutLeft animated');
 	setTimeout(function(){
 		$('.js-video-btn').addClass('wow fadeOut animated');
-		autoPlayVideo('qmnncXX-d9E','100%','100%');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
 	}, 1500);
 });
 
-function autoPlayVideo(vcode, width, height){
-  "use strict";
-  $(".v-block__video").html('<iframe width="'+width+'" height="'+height+'" src="https://www.youtube.com/embed/'+vcode+'?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>');
-};
 
 // label open-close
 let label = document.querySelector('#v-domovoy .v-label__title');
