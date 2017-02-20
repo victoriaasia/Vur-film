@@ -259,13 +259,29 @@ $('#v-question-nine .js-answer-btn').click(function() { setTimeout(function() {
   $("#v-question-nine").hide();
   $("#page-9").hide();
 
-  $('.v-test__form').submit();
-
   $('.v-footer').hide();
   $('.v-decor-test').hide();
   $(".v-test").addClass('v-test-result');
 
   // test result
-  $('#test-result1').css('display', 'block');
+
+  var msg = $('#v-test__form').serialize();
+
+    $.ajax({
+      type: 'POST',
+      url: 'result.php',
+      data: msg,
+      success: function(data) {
+        if (data == "1" ) {
+          $('#test-result1').css('display', 'block');
+        } else if (data == "2" ){
+          $('#test-result2').css('display', 'block');
+        } else if (data == "3" ) {
+          $('#test-result3').css('display', 'block');
+        } else {
+          $('#test-result4').css('display', 'block');
+        }
+      }
+    });
 
 }, 1000); });
