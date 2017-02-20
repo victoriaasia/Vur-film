@@ -219,13 +219,12 @@
       background: rgba(6, 8, 9, 0.5); }
     .v-block.-eighth .v-block__desc {
       font-size: 32px;
-      font-family: "bodoni";
       line-height: 1.438;
       text-align: center;
       padding: 10px 50px; }
     .v-block.-eighth .v-block__test {
       position: absolute;
-      bottom: 105px;
+      bottom: 65px;
       left: 50px; }
   .v-block__desc {
     font-size: 23px;

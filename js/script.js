@@ -265,6 +265,7 @@ $('#v-question-nine .js-answer-btn').click(function() { setTimeout(function() {
   $('.v-decor-test').hide();
   $(".v-test").addClass('v-test-result');
 
-  // $(".v-test-result__content").css('display', 'block');
+  // test result
+  $('#test-result1').css('display', 'block');
 
 }, 1000); });
