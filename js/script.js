@@ -288,7 +288,7 @@ $.ajax({
       $('#test-result2').css('display', 'block');
     } else if (data == 3 ) {
       $('#test-result3').css('display', 'block');
-    } else {
+    } else if (data == 4 ) {
       $('#test-result4').css('display', 'block');
     }
   }
