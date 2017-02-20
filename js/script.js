@@ -1,3 +1,15 @@
+// anchor link
+$('.js-anchor').bind('click.smoothscroll', function(e) {
+  e.preventDefault();
+  var target = this.hash,
+    $target = $(target);
+  $('html, body').stop().animate({
+    'scrollTop': $target.offset().top
+  }, 700, 'swing', function() {
+    window.location.hash = target;
+  });
+});
+
 // decor-line reveal onscroll
 var $window = $(window),
 win_height = $window.height() * 1.1,
@@ -252,6 +264,7 @@ $('#v-question-nine .js-answer-btn').click(function() { setTimeout(function() {
   $('.v-footer').hide();
   $('.v-decor-test').hide();
   $(".v-test").addClass('v-test-result');
-  $(".v-test-result__content").css('display', 'block');
+
+  // $(".v-test-result__content").css('display', 'block');
 
 }, 1000); });

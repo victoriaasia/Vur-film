@@ -22,7 +22,7 @@
 					<p>Во все времена люди верили в существование нечистой силы: несущих зло и представляющих опасность для человека существ. Духи, демоны, бесы, призраки, ведьмы, русалки, домовые и ожившие мертвецы обитали повсюду и не упускали ни малейшей возможности напакостить. </p>
 				</div>
 				<div class='v-intro__test'>
-					<a href='#' class='v-intro__link'><span>Пройти тест</span></a>
+					<a href='#v-test-start' class='v-intro__link js-anchor'><span>Пройти тест</span></a>
 				</div>
 				<div class="v-img-hidden v-heroes" ></div>
 				</div>
@@ -43,7 +43,7 @@
 				</div>
 				<div class='v-block__video-content' id="v-player">
 					<img src='img/video-button.png' class='v-block__video-btn js-video-btn'>
-					<img src='img/video-poster.png' class='v-block__video-poster js-video-btn'>					
+					<img src='img/video-poster.png' class='v-block__video-poster js-video-btn'>
 				</div>
 			</div>
 			</div>
@@ -150,7 +150,7 @@
 		<div class='v-block-second-v'>
 			<div class="v-block-wrapper">
 				<div class='v-block__test wow fadeInUp animated' data-wow-delay='0.5s' data-wow-duration="2s">
-					<a href='#' class='v-block__test-link v-link-white'><span>Пройди тест</span></a>
+					<a href='#v-test-start2' class='v-block__test-link v-link-white js-anchor'><span>Пройди тест</span></a>
 					<span>и узнай какая ты нечисть</span>
 				</div>
 				<div class='v-block__item-v'>
@@ -198,37 +198,30 @@
 						<div class='v-facts__title'>интересные факты <br>про вампиров</div>
 					</div>
 				  <div class='v-facts__item'>
-				    <img src='img/slider1.png'>
+				    <img src='img/facts1.jpg'>
 				    <div class='v-facts__desc'>
 							<div class='v-facts__text v-fade'>Считается, что порог дома обладает символической силой, поэтому вампир не может его переступить без приглашения хозяина дома.</div>
 				    </div>
 				  </div>
 
 				  <div class='v-facts__item'>
-				    <img src='img/dem.png'>
+				    <img src='img/facts2.jpg'>
 						<div class='v-facts__desc'>
 							<div class='v-facts__text v-fade'>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Буквоград всеми имеет маленький возвращайся жаренные, маленькая не продолжил над дорогу она большого ему они моей осталось языкового взгляд коварный.</div>
 				    </div>
 				  </div>
 
 				  <div class='v-facts__item'>
-				    <img src='img/rus.png'>
+				    <img src='img/facts3.jpg'>
 						<div class='v-facts__desc'>
 							<div class='v-facts__text v-fade'>Считается, что порог дома обладает символической силой, поэтому вампир не может его переступить без приглашения хозяина дома.</div>
 				    </div>
 					</div>
 
 					<div class='v-facts__item'>
-						<img src='img/obor.png'>
+						<img src='img/facts4.jpg'>
 						<div class='v-facts__desc'>
 							<div class='v-facts__text v-fade'>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Приставка собрал оксмокс власти он раз, себя. Все, которой большой безорфографичный за последний, дал однажды ручеек рукопись не знаках подзаголовок.</div>
-						</div>
-					</div>
-
-					<div class='v-facts__item'>
-						<img src='img/vamp2.png'>
-						<div class='v-facts__desc'>
-							<div class='v-facts__text v-fade'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id maxime aliquam, laboriosam voluptatem repellat officiis libero exercitationem tempore suscipit quibusdam, consequatur perspiciatis eligendi sint ab vel cum expedita quae? Totam.</div>
 						</div>
 					</div>
 
@@ -237,7 +230,6 @@
 						<span class='v-facts__dot' onclick='currentFact(2)'></span>
 						<span class='v-facts__dot' onclick='currentFact(3)'></span>
 						<span class='v-facts__dot' onclick='currentFact(4)'></span>
-						<span class='v-facts__dot' onclick='currentFact(5)'></span>
 					</div>
 
 					<div class='v-facts__prev' onclick='plusFacts(-1)'></div>
@@ -331,19 +323,19 @@
 				</div>
 		</div>
 
-		<div class='v-block -eighth wow fadeInUp animated' data-wow-delay='0.5s' data-wow-duration="2s">
-			<div class="v-block-wrapper">
+		<div class='v-block -eighth wow fadeInUp animated' data-wow-delay='0.5s' data-wow-duration="2s" id="v-test-start">
+			<div class="v-block-wrapper" id="v-test-start2">
 			<h2 class='v-block__title'>какая ты нечисть?</h2>
 			<div class='v-decor'>
 				<img src='img/dec.png' alt=''>
 				<div class='v-decor-line'></div>
 			</div>
 			<div class='v-block__desc'>
-				Еще один помощник в борьбе с темными силами – булавка от сглаза. Своей головкой она притягивает отрицательную энергию.
+				Наверняка, вам хоть раз в жизни приходило в голову, что в вас есть нечто сверхъестественное, какие-то черты, которые поднимают вас над миром обыденности. Что это: необычайная интуиция, сны, которые так и норовят сбыться или, может, дар предвидения? В каждой из нас таятся силы, о которых мы даже не подозреваем и, открыв которые, можем лучше понять себя. Хотите узнать, что за сущность в вас скрывается? Тогда ответьте на вопросы теста. А, может, вы уже знаете наперед? Тогда тем более стоит убедиться наверняка!
 			</div>
 			</div>
 			<div class='v-block__test'>
-				<a href='#' class='v-block__test-link v-link-violet js-test-btn'><span>Пройти тест</span></a>
+				<div class='v-block__test-link v-link-violet js-test-btn'><span>Пройти тест</span></div>
 			</div>
 		</div>
 
@@ -373,16 +365,17 @@
 	          <h3>Ваше любимое время суток – это...</h3>
 					</div>
 
+						<div class="v-test__answers">
 	          <div class="v-test__answer">
 	            <div>
 		            <input type="radio" name="answer" id="answer-1" class="v-test-btn js-answer-btn"/>
-		            <label for="answer-1">Ночь! Когда на город опускается тьма, я чувстую необычайный прилив сил. Обожаю пустынные улицы, освещенные только светом луны.</label>
+		            <label for="answer-1">Ночь! Когда на город опускается тьма, я чувстую необычайный прилив сил. Обожаю пустынные улицы, освещенные только светом луны. </label>
 	            </div>
 	          </div>
 	          <div class="v-test__answer">
 	            <div>
 		            <input type="radio" name="answer" id="answer-2" class="v-test-btn js-answer-btn"/>
-		            <label for="answer-2">Сумерки. В них таится что-то загадочное. Дневной свет угасает, но ночь еще не вступила в свои права. В это короткое время суток таит в себе множество возможностей.</label>
+		            <label for="answer-2">Сумерки. В них таится что-то загадочное. Дневной свет угасает, но ночь еще не вступила в свои права. В это короткое время суток таит в себе множество возможностей. </label>
 	            </div>
 	          </div>
 	          <div class="v-test__answer">
@@ -394,284 +387,280 @@
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-4" class="v-test-btn js-answer-btn"/>
-								<label for="answer-4">Я – дневная пташка. Солнце дарит мне силу. Даже, когда оно скрывается за облаками, я ощущаю его присутствие.</label>
+								<label for="answer-4">Я – дневная пташка. Солнце дарит мне силу. Даже, когда оно скрывается за облаками, я ощущаю его присутствие. </label>
 							</div>
 						</div>
-
+						</div>
 	      </div>
 
 				<div class="v-test__main animated fadeIn" id="v-question-two" style="display:none;">
 					<div class="v-test__question">
-						<h3>Вопрос 2: Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Силуэт ручеек переулка </h3>
+						<h3>Что вы думаете о людях вокруг вас?</h3>
 					</div>
-
+						<div class="v-test__answers">
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-5" class="v-test-btn js-answer-btn"/>
-								<label for="answer-5">Ночь! Когда на город опускается тьма, я чувстую необычайный прилив сил. Обожаю пустынные улицы, освещенные только светом луны.</label>
+								<label for="answer-5">Им не понять меня. Да мне бы этого и не хотелось. Оставаясь загадкой, мне легче управлять ими и подчинять своей воле. </label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-6" class="v-test-btn js-answer-btn"/>
-								<label for="answer-6">Сумерки. В них таится что-то загадочное. Дневной свет угасает, но ночь еще не вступила в свои права. В это короткое время суток таит в себе множество возможностей.</label>
+								<label for="answer-6">Иногда я чувствую себя очень одинокой в толпе. Но все меняется, когда я в кругу своих друзей.</label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-7" class="v-test-btn js-answer-btn"/>
-								<label for="answer-7">Все зависит от моего настроения, погоды и времени года. Я и сама не знаю, когда на меня может накатить хандра, а когда – безудержное веселье.</label>
+								<label for="answer-7">Я такая же, как все. Уверена, где-то есть человек, который сможет прочесть меня, как раскрытую книгу.</label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-8" class="v-test-btn js-answer-btn"/>
-								<label for="answer-8">Я – дневная пташка. Солнце дарит мне силу. Даже, когда оно скрывается за облаками, я ощущаю его присутствие.</label>
+								<label for="answer-8">Я люблю людей и стараюсь видеть в них хорошее. Конечно, иногда они меня огрочают, но это не повод терять оптимизм. </label>
 							</div>
 						</div>
-
+						</div>
 				</div>
 
 				<div class="v-test__main animated fadeIn" id="v-question-three" style="display:none;">
 					<div class="v-test__question">
-						<h3>Вопрос 3: Ваше любимое время суток – это...</h3>
+						<h3>Ваши любимые герои в книгах и фильмах:</h3>
 					</div>
-
+						<div class="v-test__answers">
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-9" class="v-test-btn js-answer-btn"/>
-								<label for="answer-9">Ночь! Когда на город опускается тьма, я чувстую необычайный прилив сил. Обожаю пустынные улицы, освещенные только светом луны.</label>
+								<label for="answer-9">Изгои и одиночки. Непризнанные гении, а иногда и харизматичные злодеи. Они гораздо интереснее скучных положительных героев. </label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-10" class="v-test-btn js-answer-btn"/>
-								<label for="answer-10">Сумерки. В них таится что-то загадочное. Дневной свет угасает, но ночь еще не вступила в свои права. В это короткое время суток таит в себе множество возможностей.</label>
+								<label for="answer-10">Мои любимые истории – о людях, которые смогли измениться и перебороть собственные слабости и страхи. </label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-11" class="v-test-btn js-answer-btn"/>
-								<label for="answer-11">Все зависит от моего настроения, погоды и времени года. Я и сама не знаю, когда на меня может накатить хандра, а когда – безудержное веселье.</label>
+								<label for="answer-11">Я предпочитаю реальные истории и героев, на чьем месте я могла бы себя представить. </label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-12" class="v-test-btn js-answer-btn"/>
-								<label for="answer-12">Я – дневная пташка. Солнце дарит мне силу. Даже, когда оно скрывается за облаками, я ощущаю его присутствие.</label>
+								<label for="answer-12">Люблю читать про самоотверженных героев, которые всем готовы пожертвовать ради высшей светлой цели. </label>
 							</div>
 						</div>
-
+						</div>
 				</div>
 
 				<div class="v-test__main animated fadeIn" id="v-question-four" style="display:none;">
 					<div class="v-test__question">
-	          <h3>Вопрос 4: Ваше любимое время суток – это...</h3>
+	          <h3>Отрицательная черта вашего характера – это...</h3>
 					</div>
-
+						<div class="v-test__answers">
 	          <div class="v-test__answer">
 	            <div>
 		            <input type="radio" name="answer" id="answer-13" class="v-test-btn js-answer-btn"/>
-		            <label for="answer-13">Ночь! Когда на город опускается тьма, я чувстую необычайный прилив сил. Обожаю пустынные улицы, освещенные только светом луны.</label>
+		            <label for="answer-13">Мстительность. Хотя в глубине души я не считаю это недостатком. Никто не причинит мне вреда и уйти безнаказанным. </label>
 	            </div>
 	          </div>
 	          <div class="v-test__answer">
 	            <div>
 		            <input type="radio" name="answer" id="answer-14" class="v-test-btn js-answer-btn"/>
-		            <label for="answer-14">Сумерки. В них таится что-то загадочное. Дневной свет угасает, но ночь еще не вступила в свои права. В это короткое время суток таит в себе множество возможностей.</label>
+		            <label for="answer-14">Импульсивность. Часто я принимаю решения, о которых потом жалею.</label>
 	            </div>
 	          </div>
 	          <div class="v-test__answer">
 	            <div>
 		            <input type="radio" name="answer" id="answer-15" class="v-test-btn js-answer-btn"/>
-		            <label for="answer-15">Все зависит от моего настроения, погоды и времени года. Я и сама не знаю, когда на меня может накатить хандра, а когда – безудержное веселье.</label>
+		            <label for="answer-15">Нерешительность. Я постоянно взвешиваю все «за» и «против» и часто остаюсь ни с чем.</label>
 	            </div>
 	          </div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-16" class="v-test-btn js-answer-btn"/>
-								<label for="answer-16">Я – дневная пташка. Солнце дарит мне силу. Даже, когда оно скрывается за облаками, я ощущаю его присутствие.</label>
+								<label for="answer-16">Я слишком добрая и никому не могу отказать, нередко люди пользуются этим.</label>
 							</div>
 						</div>
-
+						</div>
 	      </div>
 
 				<div class="v-test__main animated fadeIn" id="v-question-five" style="display:none;">
 					<div class="v-test__question">
-						<h3>Вопрос 5: Ваше любимое время суток – это...</h3>
+						<h3>Ваш стиль одежды – </h3>
 					</div>
-
+						<div class="v-test__answers">
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-17" class="v-test-btn js-answer-btn"/>
-								<label for="answer-17">Ночь! Когда на город опускается тьма, я чувстую необычайный прилив сил. Обожаю пустынные улицы, освещенные только светом луны.</label>
+								<label for="answer-17">Я – эффектная девушка и своими нарядами стараюсь это подчеркнуть. В конце концов встречают-то по одежке!</label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-18" class="v-test-btn js-answer-btn"/>
-								<label for="answer-18">Сумерки. В них таится что-то загадочное. Дневной свет угасает, но ночь еще не вступила в свои права. В это короткое время суток таит в себе множество возможностей.</label>
+								<label for="answer-18">Я еще не нашла свой стиль, поэтому в моем гардеробе куча вещей, не сочетающихся друг с другом. Каждый день мне хочется быть кем-то другим...</label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-19" class="v-test-btn js-answer-btn"/>
-								<label for="answer-19">Все зависит от моего настроения, погоды и времени года. Я и сама не знаю, когда на меня может накатить хандра, а когда – безудержное веселье.</label>
+								<label for="answer-19">Я спокойно отношусь к одежде. Главное для меня – комфорт. </label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-20" class="v-test-btn js-answer-btn"/>
-								<label for="answer-20">Я – дневная пташка. Солнце дарит мне силу. Даже, когда оно скрывается за облаками, я ощущаю его присутствие.</label>
+								<label for="answer-20">Предпочитаю спокойные расцветки и нежную элегантность. </label>
 							</div>
 						</div>
-
+						</div>
 				</div>
 
 				<div class="v-test__main animated fadeIn" id="v-question-six" style="display:none;">
 					<div class="v-test__question">
-						<h3>Вопрос 6: Ваше любимое время суток – это...</h3>
+						<h3>Если бы вы могли выбрать одну супер способность, то это было бы</h3>
 					</div>
-
+						<div class="v-test__answers">
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-21" class="v-test-btn js-answer-btn"/>
-								<label for="answer-21">Ночь! Когда на город опускается тьма, я чувстую необычайный прилив сил. Обожаю пустынные улицы, освещенные только светом луны.</label>
+								<label for="answer-21">Умение летать.</label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-22" class="v-test-btn js-answer-btn"/>
-								<label for="answer-22">Сумерки. В них таится что-то загадочное. Дневной свет угасает, но ночь еще не вступила в свои права. В это короткое время суток таит в себе множество возможностей.</label>
+								<label for="answer-22">Превращаться в любых животных и других людей. </label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-23" class="v-test-btn js-answer-btn"/>
-								<label for="answer-23">Все зависит от моего настроения, погоды и времени года. Я и сама не знаю, когда на меня может накатить хандра, а когда – безудержное веселье.</label>
+								<label for="answer-23">Останавливать время.</label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-24" class="v-test-btn js-answer-btn"/>
-								<label for="answer-24">Я – дневная пташка. Солнце дарит мне силу. Даже, когда оно скрывается за облаками, я ощущаю его присутствие.</label>
+								<label for="answer-24">Лечить людей одним прикосновением. </label>
 							</div>
 						</div>
-
+						</div>
 				</div>
 
 				<div class="v-test__main animated fadeIn" id="v-question-seven" style="display:none;">
 					<div class="v-test__question">
-	          <h3>Вопрос 7: Ваше любимое время суток – это...</h3>
+	          <h3>На вечеринке вы всегда</h3>
 					</div>
-
+						<div class="v-test__answers">
 	          <div class="v-test__answer">
 	            <div>
 		            <input type="radio" name="answer" id="answer-25" class="v-test-btn js-answer-btn"/>
-		            <label for="answer-25">Ночь! Когда на город опускается тьма, я чувстую необычайный прилив сил. Обожаю пустынные улицы, освещенные только светом луны.</label>
+		            <label for="answer-25">Появляетесь последней, но тут же оказываетесь в центре внимания.</label>
 	            </div>
 	          </div>
 	          <div class="v-test__answer">
 	            <div>
 		            <input type="radio" name="answer" id="answer-26" class="v-test-btn js-answer-btn"/>
-		            <label for="answer-26">Сумерки. В них таится что-то загадочное. Дневной свет угасает, но ночь еще не вступила в свои права. В это короткое время суток таит в себе множество возможностей.</label>
+		            <label for="answer-26">Не знаете, к какой группе примкнуть и в итоге успеваете пообщаться со всеми. </label>
 	            </div>
 	          </div>
 	          <div class="v-test__answer">
 	            <div>
 		            <input type="radio" name="answer" id="answer-27" class="v-test-btn js-answer-btn"/>
-		            <label for="answer-27">Все зависит от моего настроения, погоды и времени года. Я и сама не знаю, когда на меня может накатить хандра, а когда – безудержное веселье.</label>
+		            <label for="answer-27">Стоит в уголочке, наблюдая за весельем. </label>
 	            </div>
 	          </div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-28" class="v-test-btn js-answer-btn"/>
-								<label for="answer-28">Я – дневная пташка. Солнце дарит мне силу. Даже, когда оно скрывается за облаками, я ощущаю его присутствие.</label>
+								<label for="answer-28">Помогаете накрывать на стол и следите, чтобы у всех гостей были напитки. </label>
 							</div>
 						</div>
-
+						</div>
 	      </div>
 
 				<div class="v-test__main animated fadeIn" id="v-question-eight" style="display:none;">
 					<div class="v-test__question">
-						<h3>Вопрос 8: Ваше любимое время суток – это...</h3>
+						<h3>Вы мечтаете о путешествии</h3>
 					</div>
-
+						<div class="v-test__answers">
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-29" class="v-test-btn js-answer-btn"/>
-								<label for="answer-29">Ночь! Когда на город опускается тьма, я чувстую необычайный прилив сил. Обожаю пустынные улицы, освещенные только светом луны.</label>
+								<label for="answer-29">По древним замкам Европы.</label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-30" class="v-test-btn js-answer-btn"/>
-								<label for="answer-30">Сумерки. В них таится что-то загадочное. Дневной свет угасает, но ночь еще не вступила в свои права. В это короткое время суток таит в себе множество возможностей.</label>
+								<label for="answer-30">В какое-нибудь дикое место, куда не ступала нога человека.</label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-31" class="v-test-btn js-answer-btn"/>
-								<label for="answer-31">Все зависит от моего настроения, погоды и времени года. Я и сама не знаю, когда на меня может накатить хандра, а когда – безудержное веселье.</label>
+								<label for="answer-31">Да куда-угодно, лишь бы билеты были недорогие и уютный отель. </label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-32" class="v-test-btn js-answer-btn"/>
-								<label for="answer-32">Я – дневная пташка. Солнце дарит мне силу. Даже, когда оно скрывается за облаками, я ощущаю его присутствие.</label>
+								<label for="answer-32">В Диснейленд, чтобы прокатиться на всех аттракционах. </label>
 							</div>
 						</div>
-
+						</div>
 				</div>
 
 				<div class="v-test__main animated fadeIn" id="v-question-nine" style="display:none;">
 					<div class="v-test__question">
-						<h3>Вопрос 9: Ваше любимое время суток – это...</h3>
+						<h3>И последний вопрос: верите ли вы в сверхъестественное?</h3>
 					</div>
-
+						<div class="v-test__answers">
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-33" class="v-test-btn js-answer-btn"/>
-								<label for="answer-33">Ночь! Когда на город опускается тьма, я чувстую необычайный прилив сил. Обожаю пустынные улицы, освещенные только светом луны.</label>
+								<label for="answer-33">Конечно! Во мне самой есть что-то такое, от чего мне иногда становится жутко!</label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-34" class="v-test-btn js-answer-btn"/>
-								<label for="answer-34">Сумерки. В них таится что-то загадочное. Дневной свет угасает, но ночь еще не вступила в свои права. В это короткое время суток таит в себе множество возможностей.</label>
+								<label for="answer-34">Обычно я довольно прагматична, но в моей жизни было несколько случаев, которые заставили меня сомневаться и верить, что в мире есть что-то, неподвластное нашему пониманию. </label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-35" class="v-test-btn js-answer-btn"/>
-								<label for="answer-35">Все зависит от моего настроения, погоды и времени года. Я и сама не знаю, когда на меня может накатить хандра, а когда – безудержное веселье.</label>
+								<label for="answer-35">Я много читала о сверхъестественном, но сама никогда не сталкивалась.</label>
 							</div>
 						</div>
 						<div class="v-test__answer">
 							<div>
 								<input type="radio" name="answer" id="answer-36" class="v-test-btn js-answer-btn"/>
-								<label for="answer-36">Я – дневная пташка. Солнце дарит мне силу. Даже, когда оно скрывается за облаками, я ощущаю его присутствие.</label>
+								<label for="answer-36">Я верю, что у каждого из нас есть ангел-хранитель. </label>
 							</div>
 						</div>
-
+						</div>
 				</div>
 
     	</form>
 
-			<div class="v-block v-test-result__content v-fade">
-				<h2 class='v-block__title v-test-result__title'>Вы &mdash; Ангел-Хранитель</h2>
+	<!-- result blocks -->
 
+			<div class="v-block v-test-result__content v-fade" id="test-result1">
+				<h2 class='v-block__title v-test-result__title'>Вы &mdash; Вампир</h2>
 				<div class="v-test-result__img">
 					<img src="img/test-result1.png" alt="">
-					<img src="img/test-result2.png" alt="" style="display:none;">
-					<img src="img/test-result3.png" alt="" style="display:none;">
-					<img src="img/test-result4.png" alt="" style="display:none;">
 				</div>
 				<div class="v-test-result__text">
-					<p>Вас часто называют «светлым человеком», и это неспроста. Ваша душа чиста, и зло окружающего мире не прилипает к вам. Вашим близким и друзьям очень повезло: вы всегда придете на помощь и поддержите их добрым советом. Но вам надо научиться думать и о себе, чтобы однажды не оказаться обманутой, а при встрече со злом уметь дать ему отпор. Да, все верно – иногда проявить силу и стойкость вместо того, чтобы «подставить другую щеку» - проявление дальновидности и мудрости.</p>
-					<p>Вам очень близок по духу главный герой фильма «Вурдалаки» - Андрей. Он оказывается один на один с древним злом, и от его силы и стойкости, зависит не только его жизнь, но жизнь его любимой. Заинтригованы? Тогда скорее в кино! Фильм «Вурдалаки» выходит на экраны уже 22 февраля! </p>
+					<p>В вас дремлет демоническая сила, которая время от времени находит выход, и тогда на вашем пути лучше не становиться. Возможно, у вас в роду были ведьмы или колдуны! Но не стоит пугаться. В ваших силах направить энергию в мирное русло, чтобы даже случайно не причинить никому вреда. Всегда помните о своей силе и не давайте волю эмоциям. Иначе последствия могут расстроить не только тех, кто рядом, но и вас саму. Ваш прототип – Витольд из фильма «Вурдалаки». Хотите узнать о нем больше? Тогда обязательно сходите на премьеру 22 февраля. И главное помните – все мы те, какими сами захотели стать!</p>
 				</div>
-
 				<div class='v-test-result__social'>
 					<div class='v-test-result__social-title'>Поделиться результатом с друзьями</div>
 					<div class='v-test-result__social-icons'>
@@ -681,12 +670,81 @@
 						<a href='#' class='v-tr-icon v-tr-tw'></a>
 					</div>
 				</div>
-
 				<div class='v-block__test'>
-					<a href='#' class='v-block__test-link v-link-violet js-test-btn'><span>Пройти заново</span></a>
+					<a href='#' class='v-block__test-link v-link-violet js-test-repeat-btn'><span>Пройти заново</span></a>
 				</div>
-
 			</div>
+
+			<div class="v-block v-test-result__content v-fade" id="test-result2" style="display:none;">
+				<h2 class='v-block__title v-test-result__title'>Вы &mdash; Оборотень</h2>
+				<div class="v-test-result__img">
+					<img src="img/test-result2.png" alt="">
+				</div>
+				<div class="v-test-result__text">
+					<p>Вы – очень сложная личность. Внутри вас, как на весах, борются добро и зло. Вы переменчивы и в зависимости от настроения можете быть милой или несносной. В мифологии к вам ближе всего оборотни и полукровки, человеческое начало в которых борется с демоническим. Ваш главный внутренний враг – ваша порывистость. Не забывайте, что первое решение не всегда верное. Давайте себе время обдумать ситуацию и сделать взвешенный выбор. Ваш  прототип – полукровка Милена из фильма «Вурдалаки». Сумеет ли она сделать правильный выбор и встать на сторону добра? Ответ узнаете в кино! </p>
+				</div>
+				<div class='v-test-result__social'>
+					<div class='v-test-result__social-title'>Поделиться результатом с друзьями</div>
+					<div class='v-test-result__social-icons'>
+						<a href='#' class='v-tr-icon v-tr-vk'></a>
+						<a href='#' class='v-tr-icon v-tr-fb'></a>
+						<a href='#' class='v-tr-icon v-tr-ok'></a>
+						<a href='#' class='v-tr-icon v-tr-tw'></a>
+					</div>
+				</div>
+				<div class='v-block__test'>
+					<a href='#' class='v-block__test-link v-link-violet js-test-repeat-btn'><span>Пройти заново</span></a>
+				</div>
+			</div>
+
+			<div class="v-block v-test-result__content v-fade" id="test-result3" style="display:none;">
+				<h2 class='v-block__title v-test-result__title'>Вы &mdash; Одержимый</h2>
+				<div class="v-test-result__img">
+					<img src="img/test-result3.png" alt="">
+				</div>
+				<div class="v-test-result__text">
+					<p>Вы спокойный человек и не склонны кидаться в крайности. Эти на первый взгляд положительные качества иногда играют с вами злую шутку. Иногда своим бездействием вы наносите вред и себе, и близким. Вам проще послушать окружающих, чем самой принять решение. Но помните, что не все, кто дает советы, делают это бескорыстно и желая вам добра. Ваш прототип – слуга Андрея из фильма «Вурдалаки». Он не знает, чью сторону принять и по какой дороге идти: добра или зла, и от своей  нерешительности склонен выбирать легкий путь, который может привести к трагедии. Обязательно сходите в кино на премьеру фильма, и, возможно, увидев себя будто со стороны, вы изменитесь к лучшему!</p>
+				</div>
+				<div class='v-test-result__social'>
+					<div class='v-test-result__social-title'>Поделиться результатом с друзьями</div>
+					<div class='v-test-result__social-icons'>
+						<a href='#' class='v-tr-icon v-tr-vk'></a>
+						<a href='#' class='v-tr-icon v-tr-fb'></a>
+						<a href='#' class='v-tr-icon v-tr-ok'></a>
+						<a href='#' class='v-tr-icon v-tr-tw'></a>
+					</div>
+				</div>
+				<div class='v-block__test'>
+					<a href='#' class='v-block__test-link v-link-violet js-test-repeat-btn'><span>Пройти заново</span></a>
+				</div>
+			</div>
+
+			<div class="v-block v-test-result__content v-fade" id="test-result4" style="display:none;">
+				<h2 class='v-block__title v-test-result__title'>Вы &mdash; Ангел-хранитель</h2>
+				<div class="v-test-result__img">
+					<img src="img/test-result4.png" alt="">
+				</div>
+				<div class="v-test-result__text">
+					<p>Вас часто называют «светлым человеком», и это неспроста. Ваша душа чиста, и зло окружающего мире не прилипает к вам. Вашим близким и друзьям очень повезло: вы всегда придете на помощь и поддержите их добрым советом. Но вам надо научиться думать и о себе, чтобы однажды не оказаться обманутой, а при встрече со злом уметь дать ему отпор. Да, все верно – иногда проявить силу и стойкость вместо того, чтобы «подставить другую щеку» - проявление дальновидности и мудрости. </p>
+					<p>Вам очень близок по духу главный герой фильма «Вурдалаки» - Андрей. Он оказывается один на один с древним злом, и от его силы и стойкости, зависит не только его жизнь, но жизнь его любимой. Заинтригованы? Тогда скорее в кино! Фильм «Вурдалаки» выходит на экраны уже 22 февраля! </p>
+				</div>
+				<div class='v-test-result__social'>
+					<div class='v-test-result__social-title'>Поделиться результатом с друзьями</div>
+					<div class='v-test-result__social-icons'>
+						<a href='#' class='v-tr-icon v-tr-vk'></a>
+						<a href='#' class='v-tr-icon v-tr-fb'></a>
+						<a href='#' class='v-tr-icon v-tr-ok'></a>
+						<a href='#' class='v-tr-icon v-tr-tw'></a>
+					</div>
+				</div>
+				<div class='v-block__test'>
+					<a href='#' class='v-block__test-link v-link-violet js-test-repeat-btn'><span>Пройти заново</span></a>
+				</div>
+			</div>
+
+
+	<!-- result blocks end-->
+
 			</div>
 		</div>
 
