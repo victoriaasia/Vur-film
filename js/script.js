@@ -222,6 +222,7 @@ for(let i=0; i < repeatBtn.length; i++) {
       $("#v-test__form").css('display', 'block');
       $("#v-question-one").css('display', 'block');
       $("#page-1").css('display', 'block');
+      $('.v-footer').css('display', 'block');
     }, 500);
 
   });
