@@ -182,8 +182,11 @@ if(window.matchMedia('(max-width: 769px)').matches) {
 
 // test
 var btn = document.querySelector('.js-test-btn');
+var repeatBtn = document.querySelectorAll('.js-test-repeat-btn');
+
 var block1 = document.querySelector('.-eighth');
 var block2 = document.querySelector('.v-test');
+
 btn.onclick = function(event) {
   event = event || window.event;
   if (event.preventDefault) {
@@ -198,6 +201,34 @@ btn.addEventListener("click", function(){
       block2.classList.remove('v-hidden');
     }, 500);
 });
+
+
+for(let i=0; i < repeatBtn.length; i++) {
+
+  repeatBtn[i].onclick = function(event) {
+    event = event || window.event;
+    if (event.preventDefault) {
+      event.preventDefault();
+    } else {
+      event.returnValue = false;
+    }
+  }
+
+  repeatBtn[i].addEventListener("click", function(){
+    setTimeout(function(){
+      $(".v-test").removeClass('v-test-result');
+      $(".v-test-result__content").css('display', 'none');
+      $('.v-test .v-decor-test').css('display', 'block');
+      $("#v-test__form").css('display', 'block');
+      $("#v-question-one").css('display', 'block');
+      $("#page-1").css('display', 'block');
+    }, 500);
+
+  });
+
+}
+
+
 
 $('#v-question-one .js-answer-btn').click(function() { setTimeout(function() {
   $("#v-question-one").hide();
@@ -294,32 +325,3 @@ $.ajax({
   }
 });
 });
-
-// $('#v-test__form').submit();
-//
-// $('#v-test__form').on('submit', function(){
-//   var formData = new FormData(document.forms.test);
-//   $.ajax({
-//       type: "POST",
-//       data: formData,
-//       processData: false,
-//       contentType: false,
-//       url: "result.php",
-//       success: function(data){
-//       var data = $.parseJSON(data);
-//       console.log(data);
-//
-//       if (data == 1 ) {
-//          $('#test-result1').css('display', 'block');
-//        } else if (data == 2 ){
-//          $('#test-result2').css('display', 'block');
-//        } else if (data == 3 ) {
-//          $('#test-result3').css('display', 'block');
-//        } else {
-//          $('#test-result4').css('display', 'block');
-//        }
-//
-//       }
-//   });
-//   return false;
-// });

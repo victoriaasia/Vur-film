@@ -206,7 +206,7 @@
       box-sizing: border-box;
       position: relative; }
     .v-block.-seventh .v-float-right {
-      margin: 46px 0; }
+      margin: 130px 0; }
   .v-block.-eighth {
     background: url("../img/back3a.jpg") no-repeat;
     background-size: 100% 100%;
@@ -1107,7 +1107,7 @@
     .v-block__title br {
       display: block; }
   .v-block__item {
-    height: 650px;
+    height: 820px;
     width: 100%; }
     .v-block__item-wrapper {
       display: -webkit-box;
@@ -1453,7 +1453,7 @@
   .v-block__item-title {
     font-size: 12vw; }
   .v-block__item-text {
-    font-size: 6vw; }
+    font-size: 4vw; }
   .v-block-second-i .v-block__img {
     width: 450px;
     margin-left: 50%;
