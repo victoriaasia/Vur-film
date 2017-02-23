@@ -323,8 +323,10 @@
 				</div>
 		</div>
 
-		<div class='v-block -eighth wow fadeInUp animated' data-wow-delay='0.5s' data-wow-duration="2s" id="v-test-start">
-			<div class="v-block-wrapper" id="v-test-start2">
+		<div id="v-test-start"></div>
+		<div id="v-test-start2"></div>
+		<div class='v-block -eighth wow fadeInUp animated' data-wow-delay='0.5s' data-wow-duration="2s">
+			<div class="v-block-wrapper">
 			<h2 class='v-block__title'>какая ты нечисть?</h2>
 			<div class='v-decor'>
 				<img src='img/dec.png' alt=''>
@@ -339,19 +341,19 @@
 			</div>
 		</div>
 
-		<div class='v-block v-test v-hidden fadeIn animated' data-wow-duration="1s">
+		<div class='v-block v-test v-hidden' data-wow-duration="1s">
 			<div class="v-layer"></div>
 			<div class="v-block-wrapper">
 			<div class='v-block__title v-test__pages'>
-				<span id="page-1" style="display:block;">1&#47;9</span>
-        <span id="page-2" style="display:none;">2&#47;9</span>
-        <span id="page-3" style="display:none;">3&#47;9</span>
-        <span id="page-4" style="display:none;">4&#47;9</span>
-        <span id="page-5" style="display:none;">5&#47;9</span>
-        <span id="page-6" style="display:none;">6&#47;9</span>
-        <span id="page-7" style="display:none;">7&#47;9</span>
-        <span id="page-8" style="display:none;">8&#47;9</span>
-        <span id="page-9" style="display:none;">9&#47;9</span>
+				<span id="page-1" class="v-page v-active">1&#47;9</span>
+        <span id="page-2" class="v-page v-hidden">2&#47;9</span>
+        <span id="page-3" class="v-page v-hidden">3&#47;9</span>
+        <span id="page-4" class="v-page v-hidden">4&#47;9</span>
+        <span id="page-5" class="v-page v-hidden">5&#47;9</span>
+        <span id="page-6" class="v-page v-hidden">6&#47;9</span>
+        <span id="page-7" class="v-page v-hidden">7&#47;9</span>
+        <span id="page-8" class="v-page v-hidden">8&#47;9</span>
+        <span id="page-9" class="v-page v-hidden">9&#47;9</span>
 			</div>
 			<div class='v-decor-test'>
 				<img src='img/dec.png' alt=''>
@@ -360,7 +362,7 @@
 
 			<form method="POST" name="test" action="javascript:void(null);" id="v-test__form" >
 
-	      <div class="v-test__main animated fadeIn" id="v-question-one" style="display:block;">
+	      <div class="v-test__main v-active animated fadeIn" id="v-question-1">
 					<div class="v-test__question">
 	          <h3>Ваше любимое время суток – это...</h3>
 					</div>
@@ -393,7 +395,7 @@
 						</div>
 	      </div>
 
-				<div class="v-test__main animated fadeIn" id="v-question-two" style="display:none;">
+				<div class="v-test__main v-hidden animated fadeIn" id="v-question-2">
 					<div class="v-test__question">
 						<h3>Что вы думаете о людях вокруг вас?</h3>
 					</div>
@@ -425,7 +427,7 @@
 						</div>
 				</div>
 
-				<div class="v-test__main animated fadeIn" id="v-question-three" style="display:none;">
+				<div class="v-test__main v-hidden animated fadeIn" id="v-question-3">
 					<div class="v-test__question">
 						<h3>Ваши любимые герои в книгах и фильмах:</h3>
 					</div>
@@ -457,7 +459,7 @@
 						</div>
 				</div>
 
-				<div class="v-test__main animated fadeIn" id="v-question-four" style="display:none;">
+				<div class="v-test__main v-hidden animated fadeIn" id="v-question-4">
 					<div class="v-test__question">
 	          <h3>Отрицательная черта вашего характера – это...</h3>
 					</div>
@@ -489,7 +491,7 @@
 						</div>
 	      </div>
 
-				<div class="v-test__main animated fadeIn" id="v-question-five" style="display:none;">
+				<div class="v-test__main v-hidden animated fadeIn" id="v-question-5">
 					<div class="v-test__question">
 						<h3>Ваш стиль одежды – </h3>
 					</div>
@@ -521,7 +523,7 @@
 						</div>
 				</div>
 
-				<div class="v-test__main animated fadeIn" id="v-question-six" style="display:none;">
+				<div class="v-test__main v-hidden animated fadeIn" id="v-question-6">
 					<div class="v-test__question">
 						<h3>Если бы вы могли выбрать одну супер способность, то это было бы</h3>
 					</div>
@@ -553,7 +555,7 @@
 						</div>
 				</div>
 
-				<div class="v-test__main animated fadeIn" id="v-question-seven" style="display:none;">
+				<div class="v-test__main v-hidden animated fadeIn" id="v-question-7">
 					<div class="v-test__question">
 	          <h3>На вечеринке вы всегда</h3>
 					</div>
@@ -585,7 +587,7 @@
 						</div>
 	      </div>
 
-				<div class="v-test__main animated fadeIn" id="v-question-eight" style="display:none;">
+				<div class="v-test__main v-hidden animated fadeIn" id="v-question-8">
 					<div class="v-test__question">
 						<h3>Вы мечтаете о путешествии</h3>
 					</div>
@@ -617,7 +619,7 @@
 						</div>
 				</div>
 
-				<div class="v-test__main animated fadeIn" id="v-question-nine" style="display:none;">
+				<div class="v-test__main v-hidden animated fadeIn" id="v-question-9">
 					<div class="v-test__question">
 						<h3>И последний вопрос: верите ли вы в сверхъестественное?</h3>
 					</div>
