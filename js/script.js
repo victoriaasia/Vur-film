@@ -1,7 +1,7 @@
 // anchor link
 $('.js-anchor').bind('click.smoothscroll', function(e) {
   e.preventDefault();
-  var target = this.hash,
+  let target = this.hash,
     $target = $(target);
   $('html, body').stop().animate({
     'scrollTop': $target.offset().top
@@ -11,7 +11,7 @@ $('.js-anchor').bind('click.smoothscroll', function(e) {
 });
 
 // decor-line reveal onscroll
-var $window = $(window),
+let $window = $(window),
 win_height = $window.height() * 1.1,
 isTouch = Modernizr.touch;
 
@@ -22,7 +22,7 @@ function revealOnScroll() {
     let elem = $(".v-decor-line:not(-active)");
 
     elem.each(function() {
-      var $this     = $(this),
+      let $this     = $(this),
           offsetTop = $this.offset().top;
       if (scrolled + win_height > offsetTop) {
 				setTimeout(function(){
@@ -33,10 +33,10 @@ function revealOnScroll() {
 };
 
 // video
-var tag = document.createElement('script');
-var player;
-var done = false;
-var firstScriptTag = document.getElementsByTagName('script')[0];
+let tag = document.createElement('script');
+let player;
+let done = false;
+let firstScriptTag = document.getElementsByTagName('script')[0];
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('v-player', {
@@ -143,7 +143,7 @@ dots[slideIndex-1].className += " v-slider__dot-active";
 // window width 769px
 jQuery(document).ready(function ($) {
 if(window.matchMedia('(max-width: 769px)').matches) {
-	var removeThis = $('.v-block__item');
+	let removeThis = $('.v-block__item');
 	removeThis.removeClass('v-float-right');
 
 	label.addEventListener("click", function(){
@@ -181,11 +181,11 @@ if(window.matchMedia('(max-width: 769px)').matches) {
 
 
 // test
-var btn = document.querySelector('.js-test-btn');
-var repeatBtn = document.querySelectorAll('.js-test-repeat-btn');
+let btn = document.querySelector('.js-test-btn');
+let repeatBtn = document.querySelectorAll('.js-test-repeat-btn');
 
-var block1 = document.querySelector('.-eighth');
-var block2 = document.querySelector('.v-test');
+let block1 = document.querySelector('.-eighth');
+let block2 = document.querySelector('.v-test');
 
 btn.onclick = function(event) {
   event = event || window.event;
@@ -231,7 +231,7 @@ for(let i=0; i < repeatBtn.length; i++) {
 
 // test
 
-var answercount;
+let answercount;
 
 $(".js-test-btn").click(function() {
   $(".v-test").addClass('v-active animated slideInUp');
@@ -265,7 +265,7 @@ $(".js-answer-btn").click(function() {
 
 $('#v-test__form').on('submit', function(){
 
-var msg = $('#v-test__form').serialize();
+let msg = $('#v-test__form').serialize();
 
 $.ajax({
   type: 'POST',
@@ -273,7 +273,7 @@ $.ajax({
   data: msg,
   success: function(data) {
 
-  var data = $.parseJSON(data);
+  let data = $.parseJSON(data);
 
     if (data == 1 ) {
       $('#test-result1').css('display', 'block');
